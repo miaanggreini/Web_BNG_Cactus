@@ -1,0 +1,16 @@
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.left-section, .right-section {
+    padding: 20px;
+}
+
+.vertical-line {
+    width: 3px;
+    background-color: #000; /* Warna garis */
+    height: 100px; /* Tinggi garis, bisa disesuaikan */
+    margin: 0 20px; /* Jarak antara garis dan konten kiri/kanan */
+}

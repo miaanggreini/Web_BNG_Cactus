@@ -1,0 +1,349 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 150%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(0, 0, 0);
+  }
+  .logo{
+    width: 130px;
+    margin-top: -10px;
+    cursor: pointer;
+    border-bottom: #000;
+    border-top: #000;
+    border-left: #000;
+    border-right:#000;
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 15px;
+  }
+  li a:hover{
+    background: rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+  .navbar a:hover{
+    color: rgb(255, 255, 255);
+  }
+
+img {
+    width: 100%;
+}
+
+/* Shop */
+
+.shop {
+    background-color: #333333;
+    width: 100%;
+}
+
+.shop .allproduk-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.allproduk-header h3 {
+    color: orange;
+    padding: 10px 30px;
+}
+
+.allproduk-header h4 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.shop-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #404040;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.shop-box .card {
+    width: 280px;
+    margin: 20px;
+}
+
+.shop-box .card-image {
+    width: 90%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.shop-box .card-image img:hover {
+    transform: scale(1.1);
+    transition: transform .4s ease-in-out;
+}
+
+.shop-box .card-body {
+    padding: 20px;
+    color: white;
+    border: 3px solid #3B3B3B;
+}
+
+.shop-box .card-body h3 {
+    padding: 10px 0;
+}
+
+.shop-box .card-body i {
+    color: yellow;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.shop-box .card-body .cash {
+    font-size: 22px;
+    margin-left: 90px;
+}
+
+.contact h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #53ff95;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 10px 2em;
+  }
+  .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+  }
+  .flex-item-left h4 {
+    font-weight: 700;
+    color: #181b2c;
+  }
+  .flex-item-left p {
+    font-weight: 400;
+    color: #181b2c;
+  }
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
+  .flex-item-right form {
+    margin: 10px;
+  }
+  .flex-item-right form input[type="text"],
+  select,
+  textarea {
+    font-weight: 400;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .flex-item-right button {
+    background-color: #1e56a0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+  }
+  .flex-item-right button:hover,
+  .flex-item-right button:focus {
+    background-color: #3ef791;
+    color: white;
+  }
+  @media (max-width: 800px) {
+    .flex-item-left,
+    .flex-item-right {
+      flex: 100%;
+    }
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-container {
+    background-image: url('kaktus.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-line {
+    width: 90%; 
+    height: 2px; 
+    background-color: #000; 
+    margin: 10px; 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #20614d;
+    color: #20776d;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.logo-section img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #3a3838;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #ccc;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.navbar{
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    width: 130px;
+    margin-top: -10px;
+    cursor: pointer;
+    border-bottom: #000;
+    border-top: #000;
+    border-left: #000;
+    border-right:#000;
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 15px;
+  }
+  li a:hover{
+    background: rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+  .navbar a:hover{
+    color: rgb(255, 255, 255);
+  }
+  
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,195 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+
+body {
+  background: #333333;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: justify;
+  /* background-image: url(https://tusencuestas.com/imagenes/como-cuidar-un-cactus.jpg); */
+  background-repeat: no-repeat;
+  background-size: 100% 85vh;
+  /* background-size: contain; */
+  
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin: 80px;
+  align-items: center;
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+img{ 
+  object-fit: cover;
+}
+
+.grid > article {
+  box-shadow: 5px 5px 5px 0 black;
+  text-align: center;
+  background: whitesmoke; 
+  transition: transform;
+}
+
+.konten{
+  /* text-transform: uppercase; */
+  cursor: progress;
+}
+
+.grid > article:hover{
+  transform: rotate(10deg);
+  transform: scale(1.2);
+  /* transform: scale(0.5); **zoom out */
+  /* transform: translate(50px); **geser */
+
+}
+@media (max-width:1000px){
+  .grid {
+      grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width:500px){
+  .grid{
+      grid-template-columns: repeat(1,1fr);
+  }
+}
+.container {
+  margin: 100px auto;
+  width: 75%;
+  padding: 10px 10px;
+}
+
+.container2 .text{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: larger;
+  color: white;
+  margin: 100px auto;
+  width: 75%;
+  padding: 10px 10px;
+  justify-content: center;
+  /* background-color: white;  */
+  /* background opacity: 50%; */
+  /* opacity: 80%; */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  /* background-color: black; */
+}
+
+.logo {
+  font-size: 32px;
+  color: #f4f7f4;
+  text-decoration: none;
+  font-weight: 700;
+}
+/* 
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #f1f2f1;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}  */
+
+.youtube{
+  width: 500px;
+  height: 281px;
+  justify-content: center;
+  margin: auto;
+}
+.navbar{
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 130px;
+  margin-top: -10px;
+  cursor: pointer;
+  border-bottom: #000;
+  border-top: #000;
+  border-left: #000;
+  border-right:#000;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 15px;
+}
+li a:hover{
+  background: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.navbar a:hover{
+  color: rgb(255, 255, 255);
+}
+/* .main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+} */
+
+/* .content {
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.content p{
+  font-size: 14px;
+  text-align: left;
+  padding: 30px;
+  margin-right: 20px; 
+  margin-top: 0px;
+  margin-left: 20px;
+  justify-content: center;
+} */
+
